@@ -114,7 +114,7 @@
 Objective is to decreased the Computational time of a existing MPC navigation algorithm, which takes into account the shape and mass of the UAV through confined 3D environment. Decreased the Computational time by 6.5 times.<br>
 For increasing speed while maintaining accuracy separate methods were developed, for the cases low SNR and high SNR range sensor data.  For low SNR, geometrical approximation by RANSAC, and for high SNR, ecient data structure were used to reasonably approximate the cost function faster.<br><br>
           <center><img src="img/r.gif"> <br></center>
-          <center><br><em>The MPC Navigation Algorithm at work</em><br></center>            
+          <center><br><em>The MPC Navigation Algorithm at work</em><br></center>
           </section>
           <hr class="separator" />
           
