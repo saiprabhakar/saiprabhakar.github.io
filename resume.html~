@@ -39,22 +39,24 @@
         </div>
       </div>
     </div>
-<!--    <div class="container">-->
-<!--      <div class="row">-->
-<!--        <div class="span3 sideNav">-->
-<!--          <ul id="resumeSideNavBar" class="nav nav-pills nav-stacked affix">-->
-<!--            <li>-->
-<!--                <a href="#education">Education</a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="#acadAchievements">Scholastic achievements</a>-->
-<!--            </li>-->
+    <div class="container">
+      <div class="row">
+        <div class="span3 sideNav">
+          <ul id="resumeSideNavBar" class="nav nav-pills nav-stacked affix">
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+            <li>
+                <a href="files/Sai_Prabhakar_Resume.pdf" target="_blank">Download</a>
+            </li>
 <!--            <li><a href="#skills">Technical Skills</a></li>-->
 <!--            <li><a href="#lead">Teaching and Leadership</a></li>-->
 <!--            <li><a href="#extra">Extra-curricular Activities</a></li>-->
-<!--            <!-- <li><a href="#">...</a></li> -->-->
+<!--            <!-- <li><a href="#">...</a></li> -->
 <!--          </ul>-->
-<!--        </div>-->
+        </div>
+        </div>
+        </div>
 <!--        <div class="span9">-->
 <!--          <section id="education">-->
 <!--            <h3>Education</h3>-->
@@ -179,6 +181,23 @@
 <!--        </div>-->
 <!--      </div>-->
 <!--    </div>-->
-   <embed src="files/Sai_Prabhakar_Resume.pdf" width=840px height=2140px>
+
+
+
+<!--<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">-->
+<!--                <div class="sidebar-nav">-->
+<!--                  <ul class="nav nav-pills nav-stacked affix">-->
+<!--                    <li><a href="files/Sai_Prabhakar_Resume.pdf" target="_blank">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Download<i style="font-size: 30px;"></i></a></li>-->
+<!--                  </ul>-->
+<!--                </div><!--/.well -->
+<!--          </div><!--/span-->
+
+
+<section id="Resume">
+<center>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<iframe src="files/Sai_Prabhakar_Resume.pdf" width="840" height="2140"></center>
+</section>
+
+
+<!--<div align="right"><embed src="files/Sai_Prabhakar_Resume.pdf" width=840px height=2140px></div>-->
   </body>
 </html>
