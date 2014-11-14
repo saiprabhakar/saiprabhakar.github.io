@@ -47,7 +47,7 @@
                 <a href="#iitm">IIT Madras</a>
             </li>
             <li><a href="#coursework">Courses</a></li>
-            <li><a href="#IndependentCourses">Independent Courses</a></li>
+            <li><a href="#Independent Courses">Independent Courses</a></li>
             <!-- <li><a href="#">...</a></li> -->
           </ul>
         </div>
@@ -138,7 +138,7 @@
           </section>
           
           
-          <section id="IndependentCourses">
+          <section id="Independent Courses">
             <table class="table table-bordered table-hover">
             <h3>Independent Coursework</h3>
               <tr>
