@@ -219,10 +219,11 @@ For increasing speed while maintaining accuracy separate methods were developed,
               <h5>Guide</h5>
               <p>Mr.Elisha Madhu Kumar Karyamsetty, CTO</p>
               <h5>Astract</h5>
-              <p>Objective is to Render fonts from different languages by converting them to vector data using B-splines information from font TTF file, for using it in CAD/CAM software. Used Visual Studio C++. Learnt a lot about efficient, clean programming and memory management while I worked with various data structure and templates.</p><br><br><br>
+              <p>Objective is to Render fonts from different languages by converting them to vector data using B-splines information from font TTF file, for using it in CAD/CAM software. Used Visual Studio C++. Learnt a lot about efficient, clean programming and memory management while I worked with various data structure and templates.</p><br><br>
 	
           </section>
           <hr class="separator" />
+          <br>
         </div>
       </div>
     </div>
