@@ -56,11 +56,11 @@
         <div class="span8">
               
               <p>
-                I am Sai Prabhakar a B.Tech, Final Year undergraduate in Mechanical Engineering from <a href="http://www.iitm.ac.in/" target="_blank">Indian Institute of Technology Madras</a>.</p>  
+                I am Sai Prabhakar a Senior undergrad in  Mechanical Engineering, <a href="http://www.iitm.ac.in/" target="_blank">Indian Institute of Technology Madras</a>.</p>  
 <!--                            <h5>Hobbies</h5>-->
 		<br>
             	<p>During spare time I play Football, I spend time on Photography, Quora, listening to Music, watching documentaries and sitcoms.</p>
-	<br>
+		<br>
               <h5>Research interests</h5>
               <p>My primary interest is <strong>robot learning</strong>, i.e., Machine Learning integrated with Robotics.</p>
                 <table class="table table-bordered table-hover">
@@ -72,6 +72,7 @@
                   </tr>
                 </table>
                 <p> I am looking for opportunities to join a leading research group and contribute in Robot learning.</p>
+                <br>
                 <p><strong>About the field</strong></p>
                 <p> With the development of neural networks, deep learning and fast computation methods like GPU and even better quantum computing, will lead to the development of large networks and when combined with robotics can potentially even simulate a living organism. Recently some fundamental problems faced by robotics have inspired machine learning research and vice versa.</p>
             </div>
