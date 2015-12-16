@@ -46,67 +46,68 @@
       <div class="row">
         <div class="span3 sideNav">
           <ul id="resumeSideNavBar" class="nav nav-pills nav-stacked affix">
-            <li class="nav-header">Research Projects</li>
-            <li>
-                <a href="#recog">Online Character recog.(ongoing)</a>
-            </li>
-            <li>
-                <a href="#syn">Online Handwritting syn.(ongoing)</a>
-            </li>
-            <li>
-                <a href="#mpc">Model Predictive Control</a>
-            </li>
-            <li>
-                <a href="#road">Drivable Road area detection</a>
-            </li>
-            <li>
-                <a href="#dead">Dead reckoning</a>
-            </li>
 
-            <li class="nav-header">Competitions</li>
-            <li><a href="#robo">ABU Robocon</a></li>
-            <li><a href="#rov">Shaastra Lunar Rover Challenge</a></li>
-            <li class="nav-header">Industrial Research</li>
-            <li><a href="#amada">Software Development</a></li>
-<!--            <li><a href="#itc">ITC Ltd.</a></li>-->
+            <li class="nav-header">Research Projects</li>
+                <li><a href="#verb">Verbalization (Ongoing)</a></li>
+                <li><a href="#recog">Online Character recog.</a></li>
+                <li><a href="#syn">Online Handwritting syn.</a></li>
+                <li><a href="#mpc">Model Predictive Control</a></li>
+                <li><a href="#road">Drivable Road area detection</a></li>
+                <li><a href="#dead">Dead reckoning</a></li>
+
+            <li class="nav-header">Technical Projects</li>
+
+                <li><a href="#robo">ABU Robocon</a></li>
+                <li><a href="#amada">Software Development</a></li>
+                <li><a href="#rov">Shaastra Lunar Rover Challenge</a></li>
           </ul>
         </div>
+
         <div class="span9">
           <div class="page-header">
             <center><h1>Research Projects</small></h1></center>
           </div>
-          <section id="recog">
-            <h3>Developing Character recognition Engine (Ongoing)</h3>
-            <h5>Guides</h5><p>Prof. Srinivasa Chakravarthy.V, Computational Neuroscience Lab, IIT Madras (Aug'14 - present)<br>
-            <h5>Abstract</h5>
-            <p>
-              Objective is to develop engines for Online Character Recognition. We developed recognition engine using SVM with SVTorch. Using shape features extracted from the Strokes and achieved 98.3% accuracy. Currently exploring the possibility of using Neural Networks for the same. Presently with Deep Belief Neural Network, 88.2% accuracy was achieved (Ongoing).
-            </p>
-            <p>Currently I have also joined as a Student Project Representative with Prof. Chakaravarthy to develope sofware for the recognition engine.</p>
 
-<!--            <h5>Image processing module</h5>-->
-<!--            <ul>-->
-<!--              <li>Developed in C++, using <a href="http://opencv.willowgarage.com" target="_blank">OpenCV libraries</a>.</li>-->
-<!--              <li>Sample gestures recognized:<br></li>-->
-<!--            </ul>-->
-<!--            <div class="row">-->
-<!--              <div class="span3"><img src="img/hand1.png" class="img-rounded"/></div>-->
-<!--              <div class="span3"><img src="img/hand2.png" class="img-rounded"/></div>-->
-<!--              <div class="span3"><img src="img/hand3.png" class="img-rounded"/></div>-->
-<!--            </div>-->
-<!--            <br>-->
+          <section id="verb">
+            <h3>Verbalization: Describing Robot's Experience (Ongoing)</h3>
+            <h5>Guides</h5><p> <a href="http://www.cs.cmu.edu/~mmv/">Prof. Manuela Veloso</a> and <a href="http://www.cs.cmu.edu/~srosenth/">Dr. Stephanie Rosenthal</a>, (Sep'15 - Present)
+            <br>
+            <h5>Objective</h5>
+            <p>
+                Making robots explain its actions and experience to humans in natural language.
+            </p>
             
           </section>
+
+<!--
           <hr class="separator" />
 
-          <section id="syn">
-            <h3>Generic method for Online Character Synthesis (Ongoing)</h3>
-            <h5>Guide:</h5><p>Prof. Srinivasa Chakravarthy.V, Computational Neuroscience Lab, IIT Madras (Aug'14 - present)</p>
+          <section id="recog">
+            <h3>Developing Character recognition Engine</h3>
+            <h5>Guides</h5><p>Prof. Srinivasa Chakravarthy.V, Computational Neuroscience Lab, IIT Madras (Aug'14 - Apr'15)<br>
             <h5>Abstract</h5>
             <p>
-              Objective is to create a novel method to synthesis online characters, irrespective of the language. We creating a general Structure which can accommodate all the characteristics and variation of different languages. Incorporated noise to the generated characters to resemble handwritten character. Intended for training set expansion for developing online character recognition engines (Ongoing).
+              Develop engines for Online Character Recognition. We developed recognition engine using SVM with SVTorch. Using shape features extracted from the Strokes and achieved 98.3% accuracy. Currently exploring the possibility of using Neural Networks for the same. Presently with Deep Belief Neural Network, 88.2% accuracy was achieved (Ongoing).
+            </p>
+            <p>Currently I have also joined as a Student Project Representative with Prof. Chakaravarthy to develope sofware for the recognition engine.</p>
+          </section>
+
+          <hr class="separator" />
+-->
+
+
+          <section id="syn">
+            <h3>Online Character Synthesis and Recognition</h3>
+            <h5>Guide:</h5><p>Prof. Srinivasa Chakravarthy.V, Computational Neuroscience Lab, IIT Madras (Aug'14 - Apr'15)</p>
+            <h5>Abstract</h5>
+            <p>
+              Create a novel method to synthesis online characters, irrespective of the language. We creating a general Structure which can accommodate all the characteristics and variation of different languages and modelled it to resemble human writing. Intended for training set expansion for developing online character recognition engines.
+            </p>
+            <p>
+            Implemented Deep Neural Network (DNN) using Auto-Encoders, on a very sparse training set, and obtained overall accuracy of 88.2%. Worked as student project associate on software development for recognition engine.
             </p>
           </section>
+          
           <hr class="separator" />
           
           <section id="mpc">
@@ -142,13 +143,13 @@ For increasing speed while maintaining accuracy separate methods were developed,
               <div class="span3"><img src="img/19_o.jpg" class="img-rounded"/></div>
               <div class="span3"><img src="img/8_o.jpg" class="img-rounded"/></div>              
             </div>
-		<em><p><center>Original Image</center></p></em>
+        <em><p><center>Original Image</center></p></em>
             <div class="row">
               <div class="span3"><img src="img/13.jpg" class="img-rounded"/></div>
               <div class="span3"><img src="img/19.jpg" class="img-rounded"/></div>
               <div class="span3"><img src="img/8.jpg" class="img-rounded"/></div>              
             </div>
-		<em><p><center>After Road Detection</center></p></em>
+        <em><p><center>After Road Detection</center></p></em>
 
           </section>
           <hr class="separator" />
@@ -206,9 +207,9 @@ For increasing speed while maintaining accuracy separate methods were developed,
 <!--<img src="img/19_o.jpg" class="img-rounded"/></div>-->
           <div class="span4"><img src="img/lunar.jpg" class="img-rounded"/>
            
-		<center><p>Our team and Rover</p></center>
-	 </div>
-	 </div>
+        <center><p>Our team and Rover</p></center>
+     </div>
+     </div>
         <hr class="separator" />
           <section id="IndustrialResearch">
             <center><h1>Industrial Research</h1></center>
@@ -223,7 +224,7 @@ For increasing speed while maintaining accuracy separate methods were developed,
               <p>Mr.Elisha Madhu Kumar Karyamsetty, CTO</p>
               <h5>Astract</h5>
               <p>Objective is to Render fonts from different languages by converting them to vector data using B-splines information from font TTF file, for using it in CAD/CAM software. Used Visual Studio C++. Learnt a lot about efficient, clean programming and memory management while I worked with various data structure and templates.</p><br><br>
-	
+    
           </section>
           <hr class="separator" />
           <br>
