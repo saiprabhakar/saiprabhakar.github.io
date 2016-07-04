@@ -49,9 +49,14 @@
         <div class="span3 sideNav">
           <ul id="resumeSideNavBar" class="nav nav-pills nav-stacked affix">
 
-            <li><h4> Research Projects</h4></li>
+            <li><h4> Ongoing</h4></li>
                 <li><a href="#verb">Verbalization (Ongoing)</a></li>
-                <li><a href="#drive">Deep Learning Driving (Ongoing)</a></li>
+                <li><a href="#ped">Pedestrian detection(Ongoing)</a></li>
+
+            <li ><h4>Projects</h4></li>
+                <li><a href="#course1">Deep learning driving</a></li>
+                <li><a href="#course2">Speaker recognition</a></li>
+                <li><a href="#course3">Human Detection</a></li>
                 <li><a href="#syn">Handwritting syn. and recog.</a></li>
                 <li><a href="#mpc">Model Predictive Control</a></li>
                 <li><a href="#road">Drivable Road area detection</a></li>
@@ -59,9 +64,7 @@
                 <br>
                 <br>
                 
-            <li ><h4>Technical Projects</h4></li>
-
-                <li><a href="#kinect">Human Detection</a></li>
+            <li ><h4>Technical work</h4></li>
                 <li><a href="#robo">ABU Robocon</a></li>
                 <li><a href="#rov">Shaastra Lunar Rover Challenge</a></li>
                 <li><a href="#amada">Software Development</a></li>
@@ -75,26 +78,80 @@
 
           <section id="verb">
             <h3>Verbalization: Describing Robot's Experience (Ongoing)</h3>
-            <h5>Guides</h5><p> <a href="http://www.cs.cmu.edu/~mmv/">Prof. Manuela Veloso</a> and <a href="http://www.cs.cmu.edu/~srosenth/">Dr. Stephanie Rosenthal</a> (Sep'15 - Present)
+            <h5>Thesis work</h5><p> Guides: <a href="http://www.cs.cmu.edu/~mmv/">Prof. Manuela Veloso</a> and <a href="http://www.cs.cmu.edu/~srosenth/">Dr. Stephanie Rosenthal</a> (Sep'15 - Present)
             <br>
             <h5>Objective</h5>
             <p>
-                Making robots explain its actions and experience to humans in natural language.
+                Created a novel method-- Verbalization, to generate explanation for robot's experience and actions, based on the user's preference </p>
+            <p>
+                Being implemented on CoBot-- a mobile service robot which can access two multi-floored buildings
+                </p>
+            <p>
+                Future work involves implementing on CoBot-- a mobile service robot which can access two multi-floored buildings, and extending the verbalization to describe visual experience.
             </p>
             
           </section>
 
-          <section id="drive">
-            <h3>Deep Learning for Autonomous Driving (Ongoing)</h3>
-            <h5>Course Project, CMU</h5> <a></a> (Feb'16 - Present)
+
+
+        <section id="ped">
+            <h3>Pedestrian detection (Ongoing) </h3>
+            <h5> Internship: Delphi Automotive, Pittsburgh</a>  (May'16 - present)
             <br>
             <h5>Objective</h5>
             <p>
-                Exploring the use deep learning to drive autonomous cars in an environment with inaccurate
-map and GPS.
+            Implemented Fast-RCNN and Scale-aware Fast-RCNN for pedestrian detection. The network were trained using Caltech Pedestrian dataset.
+            </p>
+            <p>
+            Future work involves implementation on the autonomous platform and improving the performance using sensor fusion and road geometry
+        </section>
+
+
+          <section id="course1">
+            <h3>Direct perception based automation of car in racing game</h3>
+             <h5>Course Project, CMU</h5>
+            <h5>Objective</h5>
+            <p>
+                Used pre-trained Alexnet based network to map the input image to a set of key perception indicators. These indicators enables a simple controller to drive the car autonomously.
+            </p>
+            <p>
+                Pre-trained Alexnet produced similar result compared to previous work, which trained from scratch.
+            </p>
+            <p>Codes available  <a href="https://github.com/saiprabhakar/DeepDriving">here</a></p>
+
+             <center><iframe width="420" height="315" src="//https://www.youtube.com/watch?v=Ffyi9W23Fl0" frameborder="0" allowfullscreen></iframe></center>
+<center><br><em>Performance of the direct perception approach on TORCS racing game </em><br></center>
+
+          </section>
+
+        <section id="course2">
+            <h3>LSTM based speaker recognition</h3>
+            <h5>Course Project, CMU</h5>
+            <h5>Objective</h5>
+
+            <p>
+                Implemented a multi-layer LSTM network for speaker recognition in Coursera video lectures.
+            </p>
+            <p>
+                Performance in text independent dataset, were equivalent to state-of-the-art LSTM (Bidirectional-LSTM) based results.
+            </p>
+            <p>Codes available  <a href="https://github.com/saiprabhakar/rnn">here</a></p>
+            
+          </section>
+
+        <section id="course3">
+            <h3>Fast Human Detection using only depth image</h3>
+            <h5>Course Project, CMU</h5><p>
+            <h5>Objective</h5>
+            <p>
+                Implemented an algorithm for fast and robust human detection in indoor environment using only depth image.
+            </p>
+            <p>
+                Algorithm involves graph segmentation and candidate proposal followed by SVM based classification.
             </p>
             
           </section>
+
 
 <!--
           <hr class="separator" />
@@ -191,24 +248,11 @@ For increasing speed while maintaining accuracy separate methods were developed,
           </section>
           <hr class="separator" />
           
-          <section id="Tech">
+          <!--section id="Tech">
             <center><h1>Technical Projects</h1></center>
             <hr class="separator" />
-          </section>
+          </section-->
 
-          <section id="kinect">
-            <h3>Fast Human Detection using Depth Images</h3>
-            <h5>Course Project, CMU</h5><p>  (Nov'16)
-            <br>
-            <h5>Objective</h5>
-            <p>
-                Implemented an algorithm for fast and robust human detection in indoor environment
-            </p>
-            <p>
-                Algorithm involves graph segmentation and SVM based classification on depth image
-            </p>
-            
-          </section>
 
 
           <section id="robo">
@@ -216,9 +260,11 @@ For increasing speed while maintaining accuracy separate methods were developed,
                       
             <p>Represented IIT Madras in, ABU Robocon for the year 2013.<p>
 
-<p>Problem Statement  involves build a Autonomous and a Manual Robot of 0.6mx0.6mx1.0m, both capable of navigating through a Known terrain, pick and place objects and transfer object between them. And throw a object and make it land in a disc of diameter 60cm, which is approximately 1.5m high and 5m away from the robot.<p>
+<p>Problem Statement  involves build a Autonomous and a Manual Robot of 0.6mx0.6mx1.0m, both capable of navigating through a Known terrain, pick and place objects and transfer object between them. And throw a object and make it land in a disc of diameter 60cm, which is approximately 1.5m high and 5m away from the robot.</p>
 
-<p>Implemented Dead Reckoning algorithm I previously developed, to navigate using two wheel encoder. As a team we also worked in automating the task involved and developed strategies to communicate with other robot while performing coordinated tasks.<p>
+<p>Implemented Dead Reckoning algorithm I previously developed, to navigate using two wheel encoder. As a team we also worked in automating the task involved and developed strategies to communicate with other robot while performing coordinated tasks.</p>
+
+    <p>Worked with a team of 24 students. {Won Fastest Job Completion Award} for the year 2013 in the National level</p>
 
 <p>Our team Won Fastest Job Completion Award for the year 2013 in national level, among over 80 teams.</p>
 <!--            <div class="row">-->
