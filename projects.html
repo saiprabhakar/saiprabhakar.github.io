@@ -136,7 +136,9 @@
              <h5>Course Project, CMU</h5>
             <h5>Objective</h5>
             <p>
-                Used pre-trained Alexnet based network to map the input image to a set of key perception indicators. These indicators enables a simple controller to drive the car autonomously.
+              Today, there are two major paradigms for vision-based autonomous driving systems: mediated perception approaches that parse an entire scene to make a driving decision, and behavior reflex approaches that directly map an input image to a driving action by a regressor. A third paradigm: a direct perception based approach to estimate the affordance for driving was proposed <a href= "http://deepdriving.cs.princeton.edu/paper.pdf">recently</a>. Where the input image is mapped to a small number of key perception indicators that directly relate to the affordance of a road/traffic state for driving. The work uses AlexNet training from scratch for the mapping.</p>
+              
+              <p>This worked explored the possibility using transfer learning for learning the mapping. We used pre-trained Alexnet to map the input image to a set of key perception indicators. These indicators enables a simple controller to drive the car autonomously. We fine-tunned weights for all the convolution layers (layers 1-5) in the network and trained from scratch for all the fully connected layers (layers 6-8) to preserve the aspect ratio of the images obtained from the simulator.
             </p>
             <p>
                 Pre-trained Alexnet produced similar result compared to previous work, which trained from scratch.
