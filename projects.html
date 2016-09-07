@@ -125,7 +125,7 @@
             <p>
             Implemented Fast-RCNN and Scale-aware Fast-RCNN for pedestrian detection using AlexNet based architecture in Caffe. The network were trained using Caltech Pedestrian dataset and tested for real time performance by mounting in car.
             <p>
-            During testing the Fast-RCNN obtained miss rate of 8.3% for pedestrians with height greater than 50 pixels (~40m for 7.5mm focal length camera). Detection performance was testing using HDR images which offered slight improvement in detection performance.
+            During testing the Fast-RCNN obtained miss rate of 11.2% for pedestrians with height greater than 50 pixels (~40m for 7.5mm focal length camera). Detection performance was testing using HDR images which offered slight improvement in detection performance.
             </p>
             
         </section>
@@ -143,6 +143,7 @@
             <p>
                 Pre-trained Alexnet produced similar result compared to previous work, which trained from scratch.
             </p>
+            <p>More details can be found <a href="files/deep_driving.pdf">here</a></p>
             <p>Codes available  <a href="https://github.com/saiprabhakar/DeepDriving">here</a></p>
             
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/Ffyi9W23Fl0" frameborder="0" allowfullscreen></iframe></center>
@@ -157,12 +158,13 @@
             <h5>Objective</h5>
 
             <p>
-                Implemented a multi-layer LSTM network for speaker recognition in Coursera video lectures.
+                There has been significant improvement in the recognition accuracy due to the recent resurgence of deep neural networks. In this work we built a LSTM based speaker recognition system on a dataset collected from Cousera lectures-- text independent and noisy dataset. On which a state-of-the-art testing time accuracy of 93% was obtained.
             </p>
             <p>
-                Performance in text independent dataset, were equivalent to state-of-the-art LSTM (Bidirectional-LSTM) based results.
+                The final network after experimenting was 2 layer deep with 25 LSTM units each. Performance in text independent dataset, were equivalent to state-of-the-art LSTM (Bidirectional-LSTM) based results.
             </p>
-            <p>Codes available  <a href="https://github.com/saiprabhakar/rnn">here</a></p>
+            <p>More details can be found <a href="files/lstm_speaker.pdf">here</a></p>
+            <p> Codes available  <a href="https://github.com/saiprabhakar/rnn">here</a></p>
             
           </section>
 
@@ -171,11 +173,16 @@
             <h5>Course Project, CMU</h5><p>
             <h5>Objective</h5>
             <p>
-                Implemented an algorithm for fast and robust human detection in indoor environment using only depth image.
+              Mobile robots possess limited computational resources which are shared among various processes required for autonomous operation, so the human detector algorithm must have a small computational footprint. The detections has to be robust to variation in pose, occlusion and lighting variation. In this work we have implemented an algorithm for fast and robust human detection in indoor environment using only depth image.
             </p>
             <p>
-                Algorithm involves graph segmentation and candidate proposal followed by SVM based classification.
+                The algorithm involves multiple graph segmentation, heuristic based region filter to obtain candidates for potential human. Finally the candidates are classified using SVM based classification.
             </p>
+            
+            <p>More details can be <a href="files/human_detect.pdf">here</a></p>
+            
+            <center><img src="img/human_seg1.png" width="300" class="img-rounded"/>
+            <p>Results of segmentation algorithm</p></center>
             
           </section>
 
