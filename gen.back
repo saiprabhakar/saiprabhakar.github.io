@@ -1,0 +1,53 @@
+          <hr class="separator" />
+          
+
+
+          <section id="road">
+            <h3>Drivable Road area detection </h3>
+                <h5>Guide</h5>
+                <p>Prof. P.V.Maninvannan, IIT Madras (Oct'13 - May'14)</p>
+                <h5>Abstract</h5>
+                <p>
+                Surveyed literature and implemented different methods in supervised and unsupervised learning for segmenting drivable road area. In supervised learning, I developed a modified version of Eigenface method. In unsupervised learning, I explored different features like Colour space (RGB, HSB, ATan) and Texture (Haralick and Laws energy measure) with GMM clustering.</p>
+<!--            <div class="row">-->
+<!--              <div class="span4">-->
+<!--                  <img src="img/Force_Sensor.jpg" />-->
+<!--              </div>-->
+<!--              <div class="span5"><img src="img/meter.png" class="img-rounded"/></div>-->
+<!--            </div>-->
+<!--            <em>Entry to the GE Edison Challenge 2011</em>-->
+
+            <div class="row">
+              <div class="span3"><img src="img/13_o.jpg" class="img-rounded"/></div>
+              <div class="span3"><img src="img/19_o.jpg" class="img-rounded"/></div>
+              <div class="span3"><img src="img/8_o.jpg" class="img-rounded"/></div>              
+            </div>
+        <em><p><center>Original Image</center></p></em>
+            <div class="row">
+              <div class="span3"><img src="img/13.jpg" class="img-rounded"/></div>
+              <div class="span3"><img src="img/19.jpg" class="img-rounded"/></div>
+              <div class="span3"><img src="img/8.jpg" class="img-rounded"/></div>              
+            </div>
+        <em><p><center>After Road Detection</center></p></em>
+
+          </section>
+          <hr class="separator" />
+          <section id="dead">
+            <h3>Algorithm development for Dead reckoning</h3>
+            <h5>Guide</h5>
+            <p>Center For Innovation, IIT Madras (May'12 - Jul'12)</p>
+            <h5>Abstract</h5>
+            <p>Designed and developed a robot of 0.6m.x0.6m capable of following specified path accurately using using Dead Reckoning algorithm with two wheel encoder, while halting in the point at specific check points with was achieved within a distance of 0.03m, while carrying mechanism of varying centre of mass. Additionally I also designed the circuit and implemented PID control system for it.</p>
+<!--            <table class="table table-bordered table-hover">-->
+<!--              <tr><td>-->
+<!--                Proof of concept can be viewed <a href="files/Smart-Water-System.pdf" target="_blank">here. <i class="icon-download"></i></a>-->
+<!--              </td></tr>-->
+<!--            </table>-->
+<!--            <h5>Control systems</h5>-->
+<!--            <p>Control systems for a smart water management system were developed and simulated in MATLAB Simulink.</p>-->
+<!--            <div class="row">-->
+<!--              <a href="img/mlwss-control.png" target="_blank"><img src="img/mlwss-control.png" /></a>-->
+<!--              <a href="img/mlwss-sub.png" target="_blank"><img src="img/mlwss-sub.png" /></a>-->
+<!--            </div>-->
+<!--            <p><em>Entry to the GE Edison Challenge 2011</em>-->
+          </section>
