@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/summarize.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56794354-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+
+    <title>Sai Prabhakar</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/other.css" rel="stylesheet">
+   
+3
+   
+    <!-- Enable fluid response -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
+
+    <script src="bootstrap/js/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript"></script>
+  </head>
+  <body data-spy="scroll" data-target=".sideNav">
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        
+        <div class="container">
+          <a class="brand" href="index.html">Sai Prabhakar</a>
+          <ul class="nav" id="mainTabs">
+            <li class="active"><a href="#home"><i class="icon-home icon-white"></i> Home</a></li>
+            <li><a href="projects.html"><i class="icon-cog icon-white"></i> Projects</a></li>
+            <li><a href="files/Sai_Prabhakar_Resume.pdf" target="_blank"><i class="icon-list-alt icon-white"></i> Resume</a></li>
+            <li><a href="courses.html"><i class="icon-book icon-white"></i> Academics</a></li>
+            <li><a href="contact.html"><i class="icon-envelope icon-white"></i> Contact</a></li>
+            <li><a href="documents.html"><i class="material-icons">favorite</i> Documents</a></li>
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+    
+    <!-- Home content -->
+    <div id="home" class="row" >
+<!--      <div class="row">-->
+
+        <div class="span3">
+
+        </div>
+      
+        <div class="span8">
+            <br>
+            <br>
+            <br>
+            <p>
+                I am Sai Prabhakar, I am pursuing masters in robotics in <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. I completed my undergrad at Department of Mechanical Engineering, <a href="http://www.iitm.ac.in/" target="_blank">Indian Institute of Technology Madras</a>.
+            </p>
+            <br>
+            
+                <h4><strong>Current Work</strong></h4>
+            <p>
+                Presently I am working with <a href="http://www.cs.cmu.edu/~mmv/">Prof. Manuela Veloso</a> and <a href="http://www.cs.cmu.edu/~srosenth/">Dr. Stephanie Rosenthal </a> on making the robots explain its actions and experience.
+            </p>
+
+            <br>
+            
+            <h4>Research interests</h4>
+
+            <p>My primary interest is Robot Learning, i.e., Machine Learning integrated with Robotics.</p>
+
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td>Machine Learning</td> <td>Robotics</td><td>Deep Learning</td>
+                </tr>
+                <tr>
+                    <td>Computer Vision</td><td>Deep Reinforcement Learning</td> <td>Explainable AI</td>
+                </tr>
+            </table>
+
+            <br>
+            
+            Visit my github page: <a href="https://github.com/saiprabhakar">https://github.com/saiprabhakar</a>
+        
+        
+            <h5>
+              Publications:
+            </h5>
+            <p>
+              1. <a href="files/16ijcai-verbalization.pdf" target="_blank">Verbalization: Narration of Autonomous Mobile Robot Experience</a>,
+              Stephanie Rosenthal, Sai P. Selvaraj, and Manuela Veloso.
+              In Proceedings of IJCAI'16, the 26th International Joint Conference on Artificial Intelligence, New York City, NY, July, 2016.
+            </p>
+            
+            <p>
+              2. <a href="files/16roman-verbalization.pdf" target="_blank">Dynamic Generation and Refinement of Robot Verbalization</a>,
+              Vittorio Perera, Sai P. Selvaraj, Stephanie Rosenthal, and Manuela Veloso. 
+              In Proceedings of RO-MAN'16, the IEEE International Symposium on Robot and Human Interactive Communication, Columbia University, NY, August, 2016.
+            </p>
+            
+        </div>
+
+        <div class="span4">
+          <img src="img/me4.jpg" class="img-rounded" /><br>
+          <p style="text-align:center">(That's me <i class="icon-arrow-up"></i>)</p>
+        </div>
+        
+        
+        
+
+    </div>
+
+
+
+
+
+
+
+
+    
+        <div id="summary" class="col-md-12 col-lg-4 summary">
+        <h2>Github Summary
+            <small data-bind="visible: user.hireable != null" class="status">Status: <span data-bind="if: user.hireable">seeking interviews</span><span data-bind="ifnot: user.hireable">employed</span></small>
+        </h2>
+        <div class="user-info" data-bind="with: $data.user">
+            <a data-bind="attr: { href: html_url }, text: name"></a> has <span data-bind="text: followers"></span> followers and <span data-bind="text: public_repos"></span> public repositiories on Github.
+        </div>
+        <!-- ko if: organizations().length > 0 -->
+        <div class="organizations">
+            <h3>Organizations</h3>
+            <!-- ko  -->
+            <ul data-bind="foreach: { data: organizations, as: 'org' }" class="list-inline">
+                <a data-bind="attr: {href: org.html_url}, text: org.name"></a>
+            </ul>
+            <!-- /ko -->
+        </div>
+        <!-- /ko -->
+        <!-- ko if: repos().length > 0 -->
+        <div class="repos">
+            <h3>Public Repositories</h3>
+            <ul data-bind="foreach: { data: repos, as: 'repo',
+                                    beforeRemove: $removing,
+                                    afterAdd: $appending }">
+                <li>
+                    <a data-bind="attr: { href: repo.html_url }, text: repo.name" class="repo-name"></a>
+                    <div class="stats">
+                        <span title="Number of Github users who've starred this repo"><span class="glyphicon glyphicon-star"></span><span data-bind="text: repo.stargazers_count" class=""></span></span>
+                        <span title="Github users watching this repo"><span class="glyphicon glyphicon-eye-open"></span><span data-bind="text: repo.subscribers_count" class=""></span></span>
+                        <!-- ko if: repo.commits --> <span title="Total commits to the repo"><span class="glyphicon glyphicon-wrench"></span><a data-bind="attr: { href: repo.commitsURL }, text: repo.commits"></a></span> <!-- /ko -->
+                        <p data-bind="text: repo.description"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /ko -->
+        <!-- ko if: pulls().length > 0 -->
+        <div class="contributions">
+            <h3>Contributor to the Following Projects</h3>
+            <ul data-bind="foreach: { data: pulls, as: 'pull',
+                                    beforeRemove: $removing,
+                                    afterAdd: $appending }">
+                <li>
+                    <a data-bind="attr: { href: pull.html_url }, text: pull.name" class="repo-name"></a>
+                    <div class="stats">
+                        <span title="Number of Github users who've starred this repo"><span class="glyphicon glyphicon-star"></span><span data-bind="text: pull.stargazers_count" class=""></span></span>
+                        <span title="Github users watching this repo"><span class="glyphicon glyphicon-eye-open"></span><span data-bind="text: pull.subscribers_count" class=""></span></span>
+                        <!-- ko if: pull.commits --> <span title="Total commits to the repo"><span class="glyphicon glyphicon-wrench"></span><a data-bind="attr: { href: pull.commitsURL }, text: pull.commits"></a></span> <!-- /ko -->
+                        <p data-bind="text: pull.description"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /ko -->
+    </div>
+
+
+
+
+
+
+<!--
+    <div class="row">
+        <div class="span3">
+        </div>
+            <div class="span12">
+              
+        </div>
+    </div>
+-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <noscript>
+        <strong>Thanks for viewing my resume, but it is generated via Javascript templates &#9477; Please enable JS to view my resume</strong>
+    </noscript>
+    <script src="js/vendor/minify-json.js"></script>
+    <script src="//cdn.jsdelivr.net/g/jquery@1,lodash@2.4,knockout@3.0"></script>
+    <script>
+        var resume = {
+            "resume": "scrip.json"
+        }
+    </script>
+    <script src="js/summarize.js"></script>
+    
+  </body>
+
+</html>
