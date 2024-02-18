@@ -10,7 +10,7 @@ email: aps.prabhakar@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal website of Sai Prabhakar, a AI research scientist and entrepreneur.
 footer_text: 
-keywords: Deep-Learning, AI, Artificial-Intelligence, Machine-Learning, Health-AI, Generative-AI, LLM, Researcher, portfolio-website # add your own keywords or leave empty
+keywords: Deep-Learning, AI, Artificial-Intelligence, Machine-Learning, Health-AI, Generative-AI, LLM, Researcher, portfolio-website  # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: S-cool.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
