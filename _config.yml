@@ -8,7 +8,7 @@ middle_name:
 last_name: Pandi Selvaraj
 email: aps.prabhakar@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Sai Prabhakar, a AI research scientist and entrepreneur.
+  Personal website of Sai Prabhakar Pandi Selvaraj, an AI research scientist and entrepreneur.
 footer_text: 
 keywords: Deep-Learning, AI, Artificial-Intelligence, Machine-Learning, Health-AI, Generative-AI, LLM, Researcher, portfolio-website  # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -101,7 +101,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  I am always on the lookout for interesting conversations and fruitful collaborations. Feel free to use my email or LinkedIn to reach out.
+  I am always on the lookout for brainstroming and collaborations. Feel free to use my email or LinkedIn to reach out.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -281,8 +281,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Selvaraj]
+  first_name: [Sai, P.]
 
   style: apa
   locale: en
