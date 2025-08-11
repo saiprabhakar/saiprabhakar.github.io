@@ -105,21 +105,19 @@ jobs:
             libde265-dev
           pip3 install --upgrade nbconvert
           # Verify ImageMagick installation
-          convert -version
-          # Create symlink if needed
-          if ! command -v convert &> /dev/null; then
-            sudo ln -s $(which magick) /usr/local/bin/convert
-          fi
+          magick -version
+          # Create symlink for convert command
+          sudo ln -s $(which magick) /usr/local/bin/convert
 
       - name: Configure ImageMagick Policy 🛠️
         run: |
-          sudo find / -name "policy.xml" -type f -exec grep -l "pattern=\"WEBP\"" {} \; | while read -r file; do
-            echo "Updating policy file: $file"
-            sudo cp "$file" "$file.backup"
-            sudo sed -i 's/<policy domain="coder" rights="none" pattern="WEBP" \/>/<policy domain="coder" rights="read|write" pattern="WEBP" \/>/' "$file"
-          done
+          sudo sed -i 's/rights="none" pattern="WEBP"/rights="read|write" pattern="WEBP"/g' /etc/ImageMagick-6/policy.xml || true
+          sudo sed -i 's/rights="none" pattern="WEBP"/rights="read|write" pattern="WEBP"/g' /etc/ImageMagick-7/policy.xml || true
+          # Allow ImageMagick to process PDFs and other file types
+          sudo sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/g' /etc/ImageMagick-6/policy.xml || true
+          sudo sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/g' /etc/ImageMagick-7/policy.xml || true
           # Verify policy changes
-          identify -list policy
+          magick -list policy
 
       - name: Build Site 🏗️
         run: |
