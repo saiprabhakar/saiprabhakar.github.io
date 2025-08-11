@@ -66,7 +66,6 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -80,7 +79,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip" # caching pip dependencies
+          cache: "pip"
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -88,10 +87,22 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Install and Build 🔧
+      - name: Install Dependencies 🔧
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
+          sudo apt-get update && sudo apt-get install -y \
+            imagemagick \
+            libmagickwand-dev \
+            webp \
+            libwebp-dev \
+            libheif-dev \
+            libde265-dev
           pip3 install --upgrade nbconvert
+      - name: Configure ImageMagick Policy 🛠️
+        run: |
+          sudo sed -i 's/<policy domain="coder" rights="none" pattern="WEBP" \/>/<policy domain="coder" rights="read|write" pattern="WEBP" \/>/' /etc/ImageMagick-6/policy.xml || true
+          sudo sed -i 's/<policy domain="coder" rights="none" pattern="WEBP" \/>/<policy domain="coder" rights="read|write" pattern="WEBP" \/>/' /etc/ImageMagick-7/policy.xml || true
+      - name: Build Site 🏗️
+        run: |
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
