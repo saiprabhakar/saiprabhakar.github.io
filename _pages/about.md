@@ -2,33 +2,51 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: AI Researcher
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pic1.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p> ML Research Scientist </p>
+    <p>Tempus AI Inc.</p>
+    <p>Gen AI Team,</p>
+    <p>CA, USA</p>
 
+news: false # includes a list of news items
+latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
+logos:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  list:
+    - title: Tempus
+      path: tempus.png
+      square: false
+    - title: Abridge
+      path: abridge.png
+      square: false
+    - title: CMU-RI
+      path: CMU-RI.png
+      square: false
+    - title: IITM
+      path: iitm.png
+      square: false
+    - title: DR
+      path: dr.jpeg
+      square: true
+    - title: CMU
+      path: CMU.png
+      square: true
+
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I graduated from [Carnegie Mellon University](https://www.cmu.edu/) with a Master of Science in Robotics (Thesis; MSR) degree, having completed my undergrad at the Department of Mechanical Engineering, [Indian Institute of Technology Madras](https://en.wikipedia.org/wiki/IIT_Madras). My master’s thesis, conducted under the supervision of [Prof. Manuela Veloso](https://www.cs.cmu.edu/~mmv/) and [Dr. Stephanie Rosenthal](http://www.rosenthalphd.com/), focused on Explainable AI applied to Vision and Robotics. Prior to my current role at [Tempus AI Inc.](https://www.tempus.com/), I worked at [Abridge AI](https://abridge.com/), where I spearheaded the development of conversation understanding capabilities for various healthcare actors, and led ML R&D for automatic doctor documentation.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My professional experience spans across both startup environments, where I built breakthrough ML products from scratch and scaled the company from 0 to 850 Million $, as well as large product and research-oriented companies. Additionally, I am a member of the International Consortium for Artificial Intelligence (AI) and [Shared Decision Making  special interest groups](https://www.isdmsociety.org/special-interest-groups-icai/) (SDM).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Academically, my interests lie in Health AI, Reinforcement Learning, Natural Language Understanding, and Machine Learning. Currently, at Tempus, I am delving into new avenues for Generative AI in Healthcare. Notable recent research includes fine-tuning LLMs, enhancing Summarization Models with Human Feedback and Edits, and devising new metrics for evaluating LLM-generated summaries and Speaker Diarization. My work has been published across top-tier conferences in fields such as LLMs, NLP, Speech, Computer Vision, Robotics, and Reinforcement Learning.
+
+Throughout my career, I have worked extensively with popular Deep Learning frameworks, large datasets, Cloud platforms, and MLOps tools like Kubernetes and Pub/Sub.
