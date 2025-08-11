@@ -1,27 +1,27 @@
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-    {%- for logodata in page.logos.list -%}
-        {% assign entry_path = logodata.path | prepend: '/assets/img/affiliations/' %}
-        <div style="padding-bottom: 20px; margin-right: 20px; border-radius: 10px; overflow: hidden;">
-        {% if logodata.square %}
-                      <img src="{{entry_path | relative_url }}" height="75" style="border-radius: 10px; object-fit: cover;"/>
-        {% else %}
-                      <img src="{{entry_path | relative_url }}" height="75" style="border-radius: 10px; object-fit: cover;"/>
-        {% endif %}
-        </div>
-    {% endfor %}
+  {%- for logodata in page.logos.list -%}
+    {% assign entry_path = logodata.path | prepend: '/assets/img/affiliations/' %}
+    <div style="padding-bottom: 20px; margin-right: 20px; border-radius: 10px; overflow: hidden;">
+      {% if logodata.square %}
+        <img src="{{entry_path | relative_url }}" height="75" style="border-radius: 10px; object-fit: cover;">
+      {% else %}
+        <img src="{{entry_path | relative_url }}" height="75" style="border-radius: 10px; object-fit: cover;">
+      {% endif %}
+    </div>
+  {% endfor %}
 </div>
 
 {% comment %}
-<p> Hi {{logodata}} </p>
-          {% assign entry_path = logodata.path | prepend: '/assets/img/affiliations/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            width = "100"
-            class="preview z-depth-1 rounded"
-            zoomable=false
-            alt=entry.preview
-          %}
+  <p> Hi {{logodata}} </p>
+            {% assign entry_path = logodata.path | prepend: '/assets/img/affiliations/' %}
+            {%
+              include figure.liquid
+              loading="eager"
+              path=entry_path
+              sizes = "200px"
+              width = "100"
+              class="preview z-depth-1 rounded"
+              zoomable=false
+              alt=entry.preview
+            %}
 {% endcomment %}
