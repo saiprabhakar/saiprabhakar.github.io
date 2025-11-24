@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "",
+  },{id: "nav-publications",
+          title: "publications",
+          description: "For up to date list see my Google Scholar page.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/publications/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
