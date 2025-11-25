@@ -1,11 +1,20 @@
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
   {%- for logodata in page.logos.list -%}
     {% assign entry_path = logodata.path | prepend: '/assets/img/affiliations/' %}
-    <div style="padding-bottom: 20px; margin-right: 20px; border-radius: 10px; overflow: hidden;">
+    <div style="padding-bottom: 20px; margin-right: 20px; border-radius: 10px; overflow: hidden; text-align: center;">
       {% if logodata.square %}
         <img src="{{entry_path | relative_url }}" height="75" style="border-radius: 10px; object-fit: cover;">
       {% else %}
         <img src="{{entry_path | relative_url }}" height="75" style="border-radius: 10px; object-fit: cover;">
+      {% endif %}
+      {% if page.logos.show_display_titles and logodata.display_title %}
+        <div class="logo-display-title">
+          {% if logodata.url %}
+            <a href="{{ logodata.url }}" target="_blank" rel="noopener">{{ logodata.display_title }}</a>
+          {% else %}
+            {{ logodata.display_title }}
+          {% endif %}
+        </div>
       {% endif %}
     </div>
   {% endfor %}
