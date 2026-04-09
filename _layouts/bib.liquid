@@ -154,17 +154,29 @@
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% capture entrytype %}<em>{{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
+    {% assign entrytype_primary = entrytype | strip_html | strip %}
+    {% if entrytype_primary == blank %}
+      {% if entry.eprint != blank %}
+        {% if entry.archiveprefix != blank %}
+          {% capture entrytype %}<em>{{ entry.archiveprefix }}:{{ entry.eprint }}</em>{% endcapture %}
+        {% else %}
+          {% capture entrytype %}<em>{{ entry.eprint }}</em>{% endcapture %}
+        {% endif %}
+      {% elsif entry.arxiv != blank %}
+        {% capture entrytype %}<em>arXiv:{{ entry.arxiv }}</em>{% endcapture %}
+      {% elsif entry.publisher != blank %}
+        {% capture entrytype %}<em>{{ entry.publisher }}</em>{% endcapture %}
+      {% endif %}
+    {% endif %}
+    {% assign entrymonth = '' %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
-    {% endif %}
-    {% if entry.year %}
-      {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
@@ -176,10 +188,9 @@
     {% if hook_exists == 'true' %}
       {% include hook/bib.liquid %}
     {% endif %}
-    {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% capture periodical %}{{ entrytype }}{{ entrymonth }}{% endcapture %}
     <div class="periodical">
-      {{ periodical | strip }}
+      {{ periodical | strip | regex_replace: ',+\s*$', '' }}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
